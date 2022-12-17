@@ -452,7 +452,7 @@ export default {
       let url = `https://api.whatsapp.com/send?phone=573202446072&text=hola%20quiero%20enviar%20${pesos.value}%20pesos`;
       window.open(url, "_blank");
     }
-    let tasaBss = ref(316);
+    let tasaBss = ref(320);
     let tasaDolar = ref(17.70);
     function calculate(valor) {
       if (valor === "pesos") {
