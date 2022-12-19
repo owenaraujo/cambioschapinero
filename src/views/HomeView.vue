@@ -453,7 +453,7 @@ export default {
       window.open(url, "_blank");
     }
     let tasaBss = ref(320);
-    let tasaDolar = ref(17.70);
+    let tasaDolar = ref(17.12);
     function calculate(valor) {
       if (valor === "pesos") {
         let bolivar = parseFloat(pesos.value / tasaBss.value).toFixed(2);
