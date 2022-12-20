@@ -58,6 +58,7 @@
           </h1>
           <p class="leading-normal text-2xl mb-8">La mejor tasa del mercado!</p>
           <button
+            @click="ws"
             class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
             Contactanos!
@@ -452,6 +453,10 @@ export default {
       let url = `https://api.whatsapp.com/send?phone=573202446072&text=hola%20quiero%20enviar%20${pesos.value}%20pesos`;
       window.open(url, "_blank");
     }
+    function ws() {
+      let url = `https://api.whatsapp.com/send?phone=573202446072`;
+      window.open(url, "_blank");
+    }
     let tasaBss = ref(308);
     let tasaDolar = ref(17.47);
     function calculate(valor) {
@@ -472,7 +477,7 @@ export default {
     let pesos = ref();
     let bss = ref();
     let dolar = ref();
-    return { pesos, bss, dolar, calculate, irUrl };
+    return { pesos, bss, dolar, calculate, irUrl, ws };
   },
 };
 </script>
