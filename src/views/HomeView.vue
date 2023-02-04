@@ -457,8 +457,8 @@ export default {
       let url = `https://api.whatsapp.com/send?phone=573202446072`;
       window.open(url, "_blank");
     }
-    let tasaBss = ref(224);
-    let tasaDolar = ref(23.03);
+    let tasaBss = ref(215);
+    let tasaDolar = ref(23.68);
     function calculate(valor) {
       if (valor === "pesos") {
         let bolivar = parseFloat(pesos.value / tasaBss.value).toFixed(2);
